@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRUEBA 03 </title> 
+    </head>
+
+    <body>
+        <div> <H1>Aprendiendo a utilizar imágenes</H1>
+            <img src="https://imgs.search.brave.com/tXGyH1zgdPaH3PtiTOEy27j6BEUJALqtx7tPuoDDdnk/rs:fit:769:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5R/X1FZRXluUzVCNDZS/YVNVci1MNWtBSGFF/ayZwaWQ9QXBp" alt="IMAGE NOT FOUND" width="350"height="200">
+        </img>
+        </div>
+        <div>
+            <h1>Aprendiendo a utilizar los vídeos</h1>
+            <video controls width="350" height="200" autoplay loop muted  >
+            <source src="call ofduty.mp4" type="video/mp4"> 
+            </video>
+        </div>
+        <div>
+            <h1>Aprendiendo a utilizar los audios</h1>
+            <audio controls autoplay loop>
+        <source src="y2mate.com - The Rock  Face Off Scary Garry Phonk Remix.mp3" type="audio/mp3">
+    </audio>
+        </div>
+        
+    </body>
+</html>
