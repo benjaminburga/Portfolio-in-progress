@@ -1,0 +1,398 @@
+/* Estilos comunes para modo claro y oscuro */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0; 
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #7a5af8; 
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(44.85deg,#7a5af8 0%,#2c2829 80.38%);
+
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(44.85deg,#7a5af8 0%,#f63d68 80.38%);
+    opacity: 0.1;
+}
+
+.bar{
+    display: block;
+    width: 0;
+    height: inherit;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 1), rgba(0, 0, 255, 1));
+}
+header {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    margin: 7rem ;
+}
+
+.typing-effect {
+    font-family: 'Arial', sans-serif;
+    font-size: 80pt;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 1), rgba(0, 0, 255, 1));
+    -webkit-background-clip: text; /* Propiedad para aplicar el degradado solo al texto */
+    background-clip: text; /* Propiedad para aplicar el degradado solo al texto */
+    color: transparent; /* Ocultar el color del texto original */
+    transition: 2s;
+}
+.typing-effect:hover {
+    background: linear-gradient(75deg, rgb(31, 202, 15), rgba(0, 0, 255, 1));
+    -webkit-background-clip: text; /* Propiedad para aplicar el degradado solo al texto */
+    background-clip: text; /* Propiedad para aplicar el degradado solo al texto */
+    color: transparent; /* Ocultar el color del texto original */    
+}
+
+.CV button{
+    border: none;
+    background-color: #1877F2;
+    padding:11px 25px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    width: auto;
+    margin-left: 2rem;
+
+}
+header p {
+    font-size: 17pt;
+    margin-bottom: -3rem;
+    font-weight: 400;
+}
+/* Agrega estilos para el modo oscuro */
+.dark-mode {
+    background-color: #222; /* Cambia el fondo a un color oscuro */
+    color: #fff; /* Cambia el texto a blanco */
+    /* Agrega más estilos de modo oscuro aquí */
+}
+
+.dark-mode header{
+    background-color:#222 ;
+    color: white;
+}
+.dark-mode .typing-effect {
+    font-family: 'Arial', sans-serif;
+    font-size: 80pt;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 1), rgba(0, 0, 255, 1));
+    -webkit-background-clip: text; /* Propiedad para aplicar el degradado solo al texto */
+    background-clip: text; /* Propiedad para aplicar el degradado solo al texto */
+    color: transparent; /* Ocultar el color del texto original */
+    transition: 2s;
+} 
+.dark-mode nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 30, 30);
+    color: white;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    height: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 270px 800px rgba(255, 10, 255, 0.5);
+    transition: background-color 0.2s, backdrop-filter 0.2s, box-shadow 0.2s;;
+
+}
+.dark-mode .logo1{
+    filter: brightness(1) invert(1);
+
+}
+.dark-mode .navbar a{
+    color: white;
+}
+
+.dark-mode .navbar-scrolled {
+    background-color: rgb(33, 30, 30);
+    backdrop-filter: blur(30px);
+    transition: 1s;
+
+    color:white;
+    box-shadow: 0 6px 20px rgba(226, 138, 226, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    border-radius: 20px;
+
+}
+.dark-mode button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.dark-mode #darkModeToggle {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+}
+.dark-mode button#scrollToTopBtn {
+    background-color: white;
+}
+
+.photo img{
+    border-radius: 50%;
+    width: 10%;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 1), rgba(0, 0, 255, 1));
+
+}
+.photo img:hover{
+    animation: changeSize 0.5s both;
+    cursor: pointer;
+    background: linear-gradient(70deg, rgba(255, 0, 0, 1), rgba(0, 0, 255, 1));
+    border: 2px dashed white;
+
+    transition:0.5s
+
+}
+#content{
+    font-size: 30pt;
+    transition: 2s;
+}
+#darkModeToggle{
+    color: black;
+    border-radius: 6px;
+    margin-top: 6rem;
+    padding: 7px 15px;
+    border: none;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    height: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 270px 800px rgba(80, 9, 232, 0.5);
+    transition: background-color 0.2s, backdrop-filter 0.2s, box-shadow 0.2s;;
+
+}
+.navbar img{
+    width: 3%;
+    margin-left: 10rem;
+}
+.navbar {
+    background-color: white;
+    backdrop-filter: blur(5px);
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    height: 3rem;
+    margin: 0px;
+    transition: 1s;
+}
+
+.navbar-scrolled {
+    background-color: white;
+    backdrop-filter: blur(30px);
+    transition: 1s;
+    color:white;
+    box-shadow: 0 6px 20px rgba(35, 51, 101, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    border-radius: 20px;
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    text-align: center;
+    font-size: 11.4pt;
+    padding: 1.5rem;
+    transition: 1s;
+
+}
+
+nav a:hover {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 1), rgba(0, 0, 255, 1));
+    -webkit-background-clip: text; /* Propiedad para aplicar el degradado solo al texto */
+    background-clip: text; /* Propiedad para aplicar el degradado solo al texto */
+    color: transparent; /* Ocultar el color del texto original */
+    font-weight: bold;
+    font-size: 13pt ;
+    transition: 0.3s;
+}
+
+.navegation{
+    position: sticky;
+}
+section {
+    padding: 2rem;
+}
+
+#skills{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+#skills img{
+    width: 6%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+#skills h2{
+    font-size: 25pt;
+}
+
+#education img{
+    width: 10%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+footer {
+    /* Estilos para el pie de página */
+    height: 18vh;
+    background-color: #d8e2dc;
+    color: black;
+    padding: 1rem;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#derechos {
+    /* Estilos para el contenedor de las dos columnas */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+
+.contacto img{
+width: 30%;
+object-fit: contain;
+}
+
+
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 10%;
+    filter: brightness(0) invert(1);
+    
+
+}
+/* Estilos para el cursor pointer en los botones */
+button, a {
+    cursor: pointer;
+}
+
+
+/* Estilos para el botón de "Ir arriba" */
+button#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    border: 3px solid #333;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: background-color 0.5s;
+}
+
+button#scrollToTopBtn:hover {
+    background-color: #8ea1ff;
+}
+
+/* Estilos adicionales para la página responsive */
+@media (max-width: 768px) {
+    /* Agrega los estilos para tamaños de pantalla más pequeños */
+}
+
+.github-icon2{
+    width: 10%;
+}
+.github-icon2:hover{
+    border-radius: 50%;
+    width: 11%;
+    transition: 0.3s;
+}
+
+.link-icon2{
+    width: 9%;
+    margin-left: 0.5rem;
+}
+.link-icon2:hover{
+    width: 11%;
+    transition: 0.3s;
+
+}
+.button{
+    border: none;
+    background-color: #1877F2;
+    padding:11px 25px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    width: auto;
+    margin-left: 2rem;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+#mensaje{
+    border: 2px solid #52796f;
+    border-radius: 5px;
+}
+
+.iconos a img{
+    width: 15%; /* Ajusta el tamaño de los iconos */
+    padding: 2px;
+
+}
+.iconos a img:hover{
+    width: 18%;
+    border-radius: 20%;
+    transition: 0.7s;
+}
+.box{
+    width: 95vw;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+}
+.box div{
+    width: 280px;
+    height: 430px;
+    background-color: #ffffff; /* Color de fondo del elemento */
+    box-shadow: 
+      0 6px 20px rgba(35, 51, 101, 0.5), /* Sombra verde */
+      inset 0 0 50px rgba(253, 250, 250, 0.7); /* Sombra azul */
+    cursor: pointer;
+    border-radius: 10px;
+}
+.box div:hover{
+    width: 289px;
+    height: 450;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.7s;
+}
